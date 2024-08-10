@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Manajemen Keuangan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <h2>Manajemen Keuangan</h2>
+
+        <!-- Tombol Logout -->
+        <button id="logout-button">Logout</button>
+
+        <!-- Formulir untuk menambahkan aset -->
+        <div>
+            <h3>Tambah Aset</h3>
+            <form id="asset-form">
+                <label for="asset-name">Nama Aset:</label>
+                <input type="text" id="asset-name" required>
+                <label for="asset-value">Nilai Aset:</label>
+                <input type="number" id="asset-value" required>
+                <button type="submit">Tambah</button>
+            </form>
+            <ul id="assets"></ul>
+        </div>
+
+        <!-- Formulir untuk kalkulasi gaji -->
+        <div>
+            <h3>Kalkulasi Gaji</h3>
+            <form id="salary-form">
+                <label for="salary-amount">Gaji:</label>
+                <input type="number" id="salary-amount" required>
+                <label for="food-percent">Persen Uang Makan:</label>
+                <input type="number" id="food-percent" required>
+                <label for="fuel-percent">Persen Uang Bensin:</label>
+                <input type="number" id="fuel-percent" required>
+                <label for="spending-percent">Persen Uang Jajan:</label>
+                <input type="number" id="spending-percent" required>
+                <label for="other-percent">Persen Uang Lain-lain:</label>
+                <input type="number" id="other-percent" required>
+                <label for="saving-amount">Tabungan:</label>
+                <input type="number" id="saving-amount" required>
+                <label for="debt-amount">Uang Wajib:</label>
+                <input type="number" id="debt-amount" required>
+                <button type="submit">Hitung</button>
+            </form>
+            <ul id="breakdown"></ul>
+        </div>
+
+        <!-- Formulir untuk histori bulanan -->
+        <div>
+            <h3>Histori Bulanan</h3>
+            <form id="history-form">
+                <label for="history-month">Bulan dan Tahun:</label>
+                <input type="text" id="history-month" required>
+                <button type="submit">Tambah Histori</button>
+            </form>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
